@@ -22,9 +22,9 @@ def getX(DATA_PATH):
 
 
 # A subset of the Common Voice corpus was selected for training
-X_male = getX("Data/Male")
+X_male = getX("data/male")
 Y_male = np.zeros((X_male.shape[0]))
-X_female = getX("Data/Female")
+X_female = getX("data/female")
 Y_female = np.ones((X_female.shape[0]))
 X = np.vstack(X_male, X_female)
 y = np.concatenate(Y_male, Y_female)
